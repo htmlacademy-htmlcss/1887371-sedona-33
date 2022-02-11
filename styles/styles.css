@@ -9,7 +9,7 @@
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 70;
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
@@ -27,8 +27,10 @@ body {
     font-weight: 700;
     text-align: center;
     color: #FFFFFF;
+    background-color: #83B3D3;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 
 .page-header {
@@ -37,17 +39,16 @@ body {
 }
 
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     line-height: 26px;
     font-size: 20px;
     text-align: center;
     color: #000000;
-    background-color: #FFFFFF;
     text-decoration: none;
 }
 .navigation-link-picked {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     line-height: 26px;
     font-size: 20px;
@@ -57,10 +58,13 @@ body {
     text-decoration: underline;
 }
 
+.button-navigation {
+    background-color: #756257;
+}
+
 .main-index {
     color: #333333;
     background-color: #FFFFFF;
-    background-image: url("../images/index-background.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -88,27 +92,26 @@ body {
     text-align: center;
 }
 
-.advantages-item {
-    color: #FFFFFF;
-    background-color: #83B3D3;
+.main-welcome {
+    background-image: url("../images/index-background.jpg");
 }
 
-.reason-title,
-.services-title {
+.advantages-item,
+.services-item {
     color: #000000;
+}
+
+.advantages-title,
+.services-title {
     font-size: 24px;
     line-height: 28px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
-.reason-title-white {
-    color: white;
-}
-.services-list,
-.advantages-item-blue,
-.advantages-item-grey {
-    color: #000000;
+.advantages-item-white {
+    color: #FFFFFF;
+    background-color: #83B3D3;
 }
 
 .services-item,
@@ -132,13 +135,13 @@ body {
     text-align: center;
 }
 
-.section-title-booing {
+.booking-title {
     color: #000000;
-    Font-size: 30px;
-    Line-height: 36px;
+    font-size: 30px;
+    line-height: 36px;
 }
 
-.section-description-booking {
+.booking-description {
     font-size: 22px;
     line-height: 36px;
 }
@@ -149,7 +152,7 @@ body {
     line-height: 36px;
 }
 
-.subscribe {
+.subscribe-index {
     background-color: #333333;
     background-image: url(../images/background.index.jpg);
     background-size: 100% auto;
@@ -158,16 +161,22 @@ body {
     text-align: center;
 }   
 
-.section-title-subscribe {
+.subscribe-index-title {
     font-weight: 700;
-    Font-size: 30px;
-    Line-height: 36px;
+    font-size: 30px;
+    line-height: 36px;
     text-transform: uppercase;
 }
 
-.section-description-subscribe {
-    Font-size: 22px;
-    Line-height: 26px;
+.subscribe-index-description {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.newsletter-email-field {
+    color:#F2F2F2;
+    font-weight: 600px;
+    font-size: 60px;
 }
 
 .newsletter-button {
@@ -180,19 +189,17 @@ body {
     text-align: center;
 }
 
-.footer-button-class {
+.social-buttons {
     text-align: left;
 } 
 
-.footer-button {
+.button-social {
     color: #83B3D3;
+    background-color: #FFFFFF;
 }
 
 .footer-phone {
-    font-size: 40px;
-    line-height: 40px;
     text-decoration-line: none;
-    text-transform: uppercase;
     color: #000000;
 }
 
@@ -222,15 +229,16 @@ body {
 
 
 .control-input {
+    font-family: inherit;
     font-size: 20px;
     line-height: 26px;
 }
 
 .button-submit-blue {
-    text-transform:none;
     font-size: 16px;
     line-height: 21px;
     background-color: #83B3D3;
+    text-transform:uppercase;
 }
 
 .button-submit {
@@ -240,7 +248,7 @@ body {
     text-transform: none;
 }
 
-.innex-columns {
+.inner-columns {
     color: #333333;
     background-color: #FFFFFF;
 }
@@ -258,7 +266,7 @@ body {
     color:black;
 }
 
-.hotels-cards-title {
+.hotels-card-link {
     font-size: 30px;
     line-height: 39px;
     color: #000000;
@@ -267,7 +275,7 @@ body {
 }
 
 .hotels-card-type,
-.hotels-card-pric {
+.hotels-card-price {
     font-size: 18px;
     line-height: 23px;
 }
@@ -297,8 +305,8 @@ body {
 }
 
 .hotels-card-rating {
-    Font-size: 16px;
-    Line-height: 21px;
+    font-size: 16px;
+    line-height: 21px;
     background-color: #F2F2F2;
     text-transform: uppercase;
     text-align: right;
@@ -325,25 +333,25 @@ body {
 
 .sorting-type {
     text-align: right;
-    Font-size: 18px;
-    Line-height: 23px;
+    font-size: 18px;
+    line-height: 23px;
 }
 
-.subscribe-black {
+.subscribe-inner {
     background-color:#FFFFFF;
     color: #000000;
     text-align: center;
 }   
-.section-title-subscribe-black {
+.subscribe-inner-title {
     text-align: center;
     font-weight: 700;
-    Font-size: 30px;
-    Line-height: 36px;
+    font-size: 30px;
+    line-height: 36px;
 }
 
-.section-description-subscribe-black {
-    Font-size: 22px;
-    Line-height: 26px;
+.subscribe-inner-description {
+    font-size: 22px;
+    line-height: 26px;
 }
 
 

@@ -12,7 +12,7 @@
         <img src="images/logo.svg" width="139" height="70" alt="логотип Седоны" class="logo"> 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link .navigation-link-picked " href="#">
+            <a class="navigation-link navigation-link-picked " href="#">
                Главная
             </a>
           </li>
@@ -21,7 +21,7 @@
               О Седоне
             </a>
           </li>
-          <li class="navigation-item-picked">
+          <li class="navigation-item">
             <a class="navigation-link navigation-link-picked" href="catalog.html">
                Гостиницы
             </a>
@@ -44,7 +44,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link button-navigation" href="#">
                хочу сюда
             </a>
           </li>
@@ -132,14 +132,14 @@
           <button class="button button-submit-blue" type="submit">Применить</button>
           <button class="button button-submit" type="submit">Сбросить</button>          
         </form>
-        <div class="innex-columns">
+        <div class="inner-columns">
         <p class="section-description-number">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <a href="#" class="button button-dark-picked button-cards">
+        <a href="#" class="button button-cards button-cards-picked">
           <span class="visually-hidden">Показать карточки</span>
         </a>
         <a href="#" class="button button-cards">
@@ -194,7 +194,7 @@
             <p class="hotels-card-rating">Рейтинг: 9,2</p>
           </li> 
         </ul>
-        <buttom class="button button-more" type="buttom">Загрузить ещё</buttom>
+        <button class="button button-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -226,13 +226,13 @@
         </form>
         </div>
       </section>
-      <section class="subscribe-black">
-        <h2 class="section-title-subscribe-black">Подпишитесь на рассылку</h2>
-        <p class="section-description-subscribe-black">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="subscribe-inner">
+        <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-inner-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
            <p class="newsletter-email">
              <label class="visually-hidden" for="newsletter-email">Email</label>
-             <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+             <input class="field newsletter-email-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
           <button class="button newsletter-button" type="submit">
             подписаться
@@ -241,14 +241,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="footer-button-class">
-        <a class="button footer-button" href="https://twitter.com/htmlacademy_ru">
+      <div class="social-buttons">
+        <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
           <span class="visually-hidden">Твиттер</span>
         </a>
-        <a class="button footer-button" href="https://www.facebook.com/htmlacademy">
+        <a class="button button-social" href="https://www.facebook.com/htmlacademy">
           <span class="visually-hidden">Фейсбук</span>
         </a>
-        <a class="button footer-button" href="https://www.youtube.com/c/htmlacademyRUS">
+        <a class="button button-social" href="https://www.youtube.com/c/htmlacademyRUS">
           <span class="visually-hidden">Ютьюб</span>
         </a>
       </div>

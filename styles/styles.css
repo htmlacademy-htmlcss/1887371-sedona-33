@@ -152,6 +152,7 @@ body {
     line-height: 36px;
 }
 
+
 .subscribe-index {
     background-color: #333333;
     background-image: url(../images/background.index.jpg);
@@ -264,6 +265,7 @@ body {
 
 .button-cards {
     color:black;
+    background-color: #FFFFFF;
 }
 
 .hotels-card-link {
@@ -317,16 +319,17 @@ body {
     font-size: 20px;
     line-height: 26px;
 }
-.pagination-current {
-    background-color: #F2F2F2;
-    color: #000000;
-    font-size: 20px;
-    line-height: 26px;
-}
 
 .pagination-link {
     background-color: #83B3D3;
     color: #FFFFFF;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.pagination-current {
+    background-color: #F2F2F2;
+    color: #000000;
     font-size: 20px;
     line-height: 26px;
 }

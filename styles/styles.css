@@ -19,7 +19,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-    background-color: #83B3D3;
+    background-color: #E5E5E5;
 }
 
 .button {
@@ -68,19 +68,18 @@ body {
 .main-index {
     color: #333333;
     background-color: #FFFFFF;
-    background-size: 100% auto;
 }
 
 .main-inner {
     color: #000000;
     background-color: #FFFFFF;
-    background-size: 100% auto;
 }
 
 .inner-header-filters {
     color:#FFFFFF;
     background-color: #000000;
     background-image: url("../images/catalog-background1.jpg");
+    background-size: 100% auto;
     background-repeat: no-repeat
 }
 
@@ -102,6 +101,7 @@ body {
 .main-welcome {
     background-color: #83B3D3;
     background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
@@ -205,7 +205,6 @@ body {
 
 .social-links {
     color: #83B3D3;
-    background-color: #FFFFFF;
 }
 
 .footer-phone {
@@ -290,8 +289,6 @@ body {
 }
 
 .hotels-card-rating {
-    font-size: 16px;
-    line-height: 21px;
     background-color: #F2F2F2;
     text-transform: uppercase;
     text-align: right;
@@ -312,8 +309,6 @@ body {
 .pagination-current {
     background-color: #F2F2F2;
     color: #000000;
-    font-size: 20px;
-    line-height: 26px;
 }
 
 .sorting-type {
@@ -323,8 +318,6 @@ body {
 }
 
 .subscribe-inner {
-    background-color:#FFFFFF;
-    color: #000000;
     text-align: center;
 }   
 .subscribe-inner-title {

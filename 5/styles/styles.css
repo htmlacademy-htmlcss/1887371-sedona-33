@@ -41,7 +41,6 @@ body {
 }
 
 .navigation-link {
-    font-family: inherit;
     font-weight: 700;
     line-height: 26px;
     font-size: 20px;
@@ -51,18 +50,13 @@ body {
 }
 
 .navigation-link-picked {
-    font-family: inherit;
-    font-weight: 700;
-    line-height: 26px;
-    font-size: 20px;
-    text-align: center;
-    color: #000000;
     background-color: #FFFFFF;
     text-decoration: underline;
 }
 
 .button-navigation {
     background-color: #756257;
+    line-height: 20px;
 }
 
 .main-index {

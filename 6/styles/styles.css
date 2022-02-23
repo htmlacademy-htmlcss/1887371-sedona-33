@@ -298,6 +298,12 @@ body {
     color:#FFFFFF;
 }
 
+.filters {
+    display: flex;
+    margin: 0 auto; 
+    padding: 0;
+}
+
 .checkboxes {
     width: 150px;
     padding-right: 67px;

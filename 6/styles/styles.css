@@ -352,13 +352,6 @@ body {
     font-weight: 700;
 }
 
-.filter-number {
-    display: flex; 
-    justify-content: space-between;  
-    margin: 0; 
-    padding: 0; 
-}
-
 .button-cards {
     color:black;
     background-color: #FFFFFF;

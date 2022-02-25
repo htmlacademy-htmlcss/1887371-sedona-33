@@ -49,7 +49,6 @@ body {
 }
 
 .logo {
-    display: flex; 
     width: 139px;
     padding-right: 47px;
 }
@@ -131,7 +130,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
-    margin: 0 0;
+    margin: 0;
     padding: 0 40px; 
 }
 
@@ -184,17 +183,13 @@ body {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.index-columns,
-.advantages-columns {
-    background-color: white;
-}
-
 .services-list, 
 .advantages-columns {
     display: flex; 
     justify-content: space-between;  
     margin: 0; 
     padding: 0; 
+    background-color: white;
 }
 
 .booking {
@@ -276,14 +271,15 @@ body {
 .footer-phone {
     text-decoration-line: none;
     color: #000000;
-    padding-left: 61px;
+    display: block;
     padding-right: 53px;
     margin: 0 auto;
+    width: 720px;
 }
 
 .footer-site {
-    margin-left: auto;
-    max-width: 115px;
+    padding-left: auto;
+    width: 115px;
 }
 
 .inner-header-title {
@@ -335,7 +331,6 @@ body {
     font-size: 20px;
     line-height: 26px;
 }
-
 
 .button-submit {
     background-color: transparent;
@@ -391,9 +386,9 @@ body {
 .button-more {
     font-size: 20px;
     line-height: 26px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+    display: block; 
+    margin: 0 auto;
+    width: 620px;
 }
 
 .pagination-link {

@@ -77,9 +77,8 @@
         </header>
         <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
           <form class="hotels-filters" action="https://echo.htmlacademy.ru/" method="get">
-            <ul class="filters">
-            <li class="checkboxes">
-            <fieldset class="hotels-filter-group">
+            <div class="filters">
+            <fieldset class="hotels-filter-group checkboxes">
            <legend class="hotels-filter-title">Инфраструктура</legend>
          <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
@@ -102,9 +101,7 @@
             </li>
           </ul>
         </fieldset>
-      </li>
-      <li class="checkboxes-types">
-        <fieldset class="hotels-filter-group">
+        <fieldset class="hotels-filter-group checkboxes-types">
           <legend class="hotels-filter-title">Тип жилья:</legend>
           <ul class="hotels-filter-list">
             <li class="hotels-filter-item">
@@ -127,9 +124,7 @@
             </li>
           </ul>
         </fieldset>
-      </li>
-      <li class="checkboxes-prices">
-        <fieldset class="hotels-filter-group">
+        <fieldset class="hotels-filter-group checkboxes-prices">
           <legend class="hotels-filter-title">Стоимость, ₽:</legend>
           <button class="range-toggle toggle-min" type="button">
             <span class="visually-hidden">Изменить минимальную цену.</span>
@@ -143,13 +138,12 @@
            <label class="hotels-filter-label">
              <input class="hotels-filter-input" type="number" name="max-price">до
            </label>
-          </li>
           </fieldset>
-          <li class="buttons-submit">
+          <div class="buttons-submit">
           <button class="button" type="submit">Применить</button>
           <button class="button button-submit" type="submit">Сбросить</button>
-          </li>
-          </ul>
+          </div>
+          </div>
         </form>
       </div>
       <section class="hotels-products">

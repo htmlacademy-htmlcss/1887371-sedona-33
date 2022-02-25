@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -40,6 +48,24 @@ body {
     background-color: #FFFFFF;
 }
 
+.logo {
+    width: 139px;
+    padding-right: 47px;
+}
+
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 400px;
+    margin: 0;
+    padding: 0 40px;
+}
+
+
 .navigation-link {
     font-weight: 700;
     line-height: 26px;
@@ -53,10 +79,20 @@ body {
     text-decoration: underline;
 }
 
+.navigation-user {
+    max-width: 300px;
+    margin-left: auto;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
 .button-navigation {
     background-color: #756257;
     line-height: 20px;
 }
+
 
 .main-index {
     color: #333333;
@@ -68,12 +104,23 @@ body {
     background-color: #FFFFFF;
 }
 
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.welcome {
+    display: block; 
+    margin: 0 auto;
+}
+
 .inner-header-filters {
     color:#FFFFFF;
     background-color: #000000;
     background-image: url("../images/catalog-background1.jpg");
     background-size: 100% auto;
-    background-repeat: no-repeat
+    background-repeat: no-repeat; 
 }
 
 .section-title {
@@ -83,12 +130,16 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
+    margin: 0;
+    padding: 0 40px; 
 }
 
 .section-description {
     font-size: 22px;
     line-height: 36px;
     text-align: center;
+    margin: 0;
+    padding: 0 40px;
 }
 
 .main-welcome {
@@ -101,6 +152,13 @@ body {
 .advantages-item,
 .services-item {
     color: #000000;
+    text-align: center;
+    width: 400px;
+}
+
+.advantages-item-white {
+    color: #FFFFFF;
+    background-color: #83B3D3;
 }
 
 .advantages-title,
@@ -109,17 +167,13 @@ body {
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.advantages-item-white {
-    color: #FFFFFF;
-    background-color: #83B3D3;
+    text-align: center;
+    width: 400px;
 }
 
 .services-item,
 .advantages-item-grey {
-    background-color: rgba(242, 242, 242, 1);
-}
+    background-color: rgba(242, 242, 242, 1);}
 
 .services-item-white {
     background-color: #FFFFFF;
@@ -129,7 +183,12 @@ body {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.index-columns {
+.services-list, 
+.advantages-columns {
+    display: flex; 
+    justify-content: space-between;  
+    margin: 0; 
+    padding: 0; 
     background-color: white;
 }
 
@@ -192,8 +251,17 @@ body {
     background-color: #FFFFFF;
 }
 
+.page-footer-container {
+    display: flex;
+    padding: 0; 
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .social-links {
     text-align: left;
+    width: 107px; 
+    padding-right: 61px;
 } 
 
 .social-link {
@@ -203,8 +271,16 @@ body {
 .footer-phone {
     text-decoration-line: none;
     color: #000000;
+    display: block;
+    padding-right: 53px;
+    margin: 0 auto;
+    width: 720px;
 }
 
+.footer-site {
+    padding-left: auto;
+    width: 115px;
+}
 
 .inner-header-title {
     font-size: 60px;
@@ -218,6 +294,26 @@ body {
     color:#FFFFFF;
 }
 
+.filters {
+    display: flex;
+    margin: 0 auto; 
+    padding: 0;
+}
+
+.checkboxes {
+    width: 150px;
+    padding-right: 67px;
+}
+
+.checkboxes-types {
+    width: 130px;
+    padding-right: 167px;
+}
+
+.checkboxes-prices {
+    width: 300px;
+    padding-right: 81px;
+}
 
 .hotels-filter-title {
     font-size: 20px;
@@ -230,14 +326,11 @@ body {
     line-height: 23px;
 }
 
-
 .control-input {
     font-family: inherit;
     font-size: 20px;
     line-height: 26px;
 }
-
-
 
 .button-submit {
     background-color: transparent;
@@ -253,7 +346,6 @@ body {
     text-transform: uppercase;
     font-weight: 700;
 }
-
 
 .button-cards {
     color:black;
@@ -287,9 +379,16 @@ body {
     text-align: right;
 }
 
+.hotels-products {
+    width: 1200px;
+}
+
 .button-more {
     font-size: 20px;
     line-height: 26px;
+    display: block; 
+    margin: 0 auto;
+    width: 620px;
 }
 
 .pagination-link {

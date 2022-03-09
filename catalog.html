@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/outlune.css">
-    <link rel="stylesheet" href="styles/outline-settings.css">
   </head>
   <body>
     <header class="page-header">
@@ -65,8 +63,9 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                Главная
+              <img src="images\home1.svg" width="12" height="12" alt="Главная страница" class="breadcrumbs-link">
+              <a class="breadcrumbs-link-text visually-hidden" href="index.html">
+                Главная страница
               </a> 
             </li>
             <li class="breadcrumbs-item">
@@ -76,7 +75,6 @@
         </header>
         <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
           <form class="hotels-filters" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="filters">
             <fieldset class="hotels-filter-group checkboxes">
            <legend class="hotels-filter-title">Инфраструктура</legend>
          <ul class="hotels-filter-list">
@@ -142,11 +140,11 @@
           <button class="button" type="submit">Применить</button>
           <button class="button button-submit" type="submit">Сбросить</button>
           </div>
-          </div>
         </form>
       </div>
       <section class="hotels-products">
         <p class="section-description-number">Найдено гостиниц: 38</p>
+        <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -164,6 +162,7 @@
           <img class="button-cards-image" width="16" height="14" src="images/mode-list1.svg" alt="Показать список">
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
         <ul class="hotels-list">
           <li class="hotels-card">
             <a class="hotels-card-link" href="#">
@@ -211,6 +210,7 @@
           </li> 
         </ul>
         <button class="button button-more" type="button">Загрузить ещё</button>
+        <div class="pagination-container">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -240,6 +240,7 @@
             <option value="3">3</option>
           </select>
         </form>
+      </div>
       </section>
       <section class="subscribe-inner">
         <h2 class="subscribe-inner-title">Подпишитесь на рассылку</h2>
@@ -268,7 +269,7 @@
           <span class="visually-hidden">Фейсбук</span>
         </a>
         <a class="social-link" href="https://www.youtube.com/c/htmlacademyRUS">
-          <img src="images\social-twitter.svg" width="20" heigh="16" alt="Ютьюб" class="social-link-youtube">
+          <img src="images\social-youtube.svg" width="20" heigh="16" alt="Ютьюб" class="social-link-youtube">
           <span class="visually-hidden">Ютьюб</span>
         </a>
       </div>

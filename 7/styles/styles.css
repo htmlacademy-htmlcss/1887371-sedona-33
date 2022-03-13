@@ -175,7 +175,7 @@ body {
 .advantages-list,
 .services-list {
     display: flex; 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -271,7 +271,6 @@ body {
     font-size: 20px;
 }
 
-
 .subscribe-index {
     background-color: #333333;
     background-image: url("../images/background.index.jpg");
@@ -296,14 +295,31 @@ body {
     margin-bottom: 46px;
 }
 
-.newsletter-email-field {
-    color:#F2F2F2;
-    font-size:18px; 
-    line-height: 26px;
+.newsletter-form {
+    display: flex;
+}
+
+.newsletter-email,
+.newsletter-button {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 26px; /**????????????????**/
+}
+
+.newsletter-email {
+    width: 560px;
+    margin-right: 0;
+    
 }
 
 .newsletter-button {
-    font-size: 20px;
+    width: 200px;
+    margin-left: 0;
+}
+
+.newsletter-email-field {
+    color:#F2F2F2;
+    font-size: 18px; 
     line-height: 26px;
 }
 
@@ -362,11 +378,15 @@ body {
     list-style-type: none;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-link-image {
     font: 16px;
     line-height: 21px;
     color:#FFFFFF;
     margin-right: 26px;
+}
+
+.breadcrumbs-link {
+    margin-left: 10px;
 }
 
 .hotels-filters {
@@ -427,17 +447,51 @@ body {
     background-color: #FFFFFF;
 }
 
+.hotels-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+}
+
+.hotels-card:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: 133px 133px;
+    column-gap: 26px;
+    row-gap: 16px;
+    flex-grow: 1;
+}
+
 .hotels-card-link {
+    text-decoration: none; 
+}
+
+.hotels-card-image {
     font-size: 30px;
     line-height: 39px;
     color: #000000;
-    text-decoration: none; 
+}
+
+.hotels-card-title {
+    font-weight: 700;
+    line-height: 31px;
+    font-size: 24px;
+    color: #000000;
+    margin: 16px 0;
 }
 
 .hotels-card-type,
 .hotels-card-price {
     font-size: 18px;
     line-height: 23px;
+}
+
+.hotels-card-button {
+    padding: 10px 0;
 }
 
 .button-brown {
@@ -452,6 +506,7 @@ body {
     background-color: #F2F2F2;
     text-transform: uppercase;
     text-align: right;
+    margin-bottom: auto;
 }
 
 .hotels-products {
@@ -471,9 +526,11 @@ body {
 }
 
 .hotels-list {
+    display: grid;
+    grid-template-columns: repeat(3, 340px); 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 34px;
+    gap: 18px;
 }
 
 .button-more {
@@ -482,7 +539,6 @@ body {
     display: block; 
     margin: 0 auto;
     width: 620px;
-    margin: 30px 0;
     padding: 17px 0;
 }
 
